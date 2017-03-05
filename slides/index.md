@@ -6,7 +6,7 @@
 ### Matt Driscoll – [@driskull](https://twitter.com/driskull)
 ### JC Franco – [@arfncode](https://twitter.com/arfncode)
 
-<img src="images/flag.gif" width="350">
+<img src="images/flag.gif" width="350" style="border:0; background:none; box-shadow:none;">
 
 ---
 
