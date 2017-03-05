@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Search</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var demoLocation = location.href.slice(0, location.href.lastIndexOf("/")) + "/app";
+    console.log(demoLocation);
+
+    var dojoConfig = {
+      packages: [
+        {
+          name: "demo",
+          location: demoLocation
+        },
+        {
+          name: "annyang",
+          location: "https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/",
+          main: "annyang.min"
+        }
+      ]
+    };
+  </script>
+  <script src="https://js.arcgis.com/4.3/"></script>
+  <script>
+    require([
+      "esri/core/Accessor",
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/widgets/Search",
+      "demo/VoiceSearchViewModel",
+      "dojo/domReady!"
+    ], function(
+      Accessor,
+      WebScene, SceneView,
+      Search, VoiceSearchViewModel
+    ) {
+
+      var scene = new WebScene({
+        portalItem: {
+          id: "c5ee5eb2730e4f86af82d548c820db07"
+        }
+      });
+
+      var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+        zoom: 14,
+        center: [-116.51327133175782, 33.82029520464912]
+      });
+
+      var search = new Search({
+        viewModel: new VoiceSearchViewModel({
+          view: view
+        })
+      });
+
+      view.ui.add(search, "top-right");
+    });
+  </script>
+  <div id="viewDiv"></div>
+</body>
+</html>

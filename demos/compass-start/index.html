@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+
+  <title>Vintage Compass</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+
+  <script>
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/widgets/Compass",
+      "dojo/domReady!"
+    ], function (
+      WebScene, SceneView, Compass
+    ) {
+        var scene = new WebScene({
+          portalItem: {
+            id: "c5ee5eb2730e4f86af82d548c820db07"
+          }
+        });
+
+        var view = new SceneView({
+          container: "viewDiv",
+          map: scene,
+          ui: {
+            components: ["attribution", "zoom"]
+          }
+        });
+
+        var compass = new Compass({
+          view: view
+        });
+
+        view.ui.add(compass, "bottom-left");
+
+      });
+  </script>
+
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>

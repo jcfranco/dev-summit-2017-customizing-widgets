@@ -1,0 +1,19 @@
+{
+  "name": "vintage-compass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/arcgis-js-api": "^4.2.0"
+  },
+  "devDependencies": {
+    "dojo-typings": "^1.11.6",
+    "typescript": "^2.2.1"
+  }
+}

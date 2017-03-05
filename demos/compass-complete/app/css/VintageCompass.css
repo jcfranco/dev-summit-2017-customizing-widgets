@@ -1,0 +1,45 @@
+.vintage-compass {
+  cursor: pointer;
+}
+
+.vintage-compass__compass {
+  width: 150px;
+  height: 150px;
+}
+
+.vintage-compass__dial-container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.vintage-compass__dial {
+  width: 150px;
+  height: 150px;
+  animation: vingage-compass--sway 3.5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes vingage-compass--sway {
+  0% {
+    -webkit-transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg)
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+  }
+}
+
+@keyframes vingage-compass--sway {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg)
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}

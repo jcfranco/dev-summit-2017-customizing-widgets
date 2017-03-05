@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+
+  <title>Vintage Search</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/css/VintageSearch.css">
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+
+  <script>
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/widgets/Search/SearchViewModel",
+      "dojo/domReady!"
+    ], function (
+      WebScene, SceneView, SearchViewModel
+    ) {
+        var scene = new WebScene({
+          portalItem: {
+            id: "c5ee5eb2730e4f86af82d548c820db07"
+          }
+        });
+
+        var view = new SceneView({
+          container: "viewDiv",
+          map: scene,
+          ui: {
+            components: ["attribution", "zoom"]
+          }
+        });
+
+        var searchViewModel = new SearchViewModel({
+          view: view
+        });
+
+        var searchNode = document.createElement("div");
+        view.ui.add(searchNode, "top-right");
+
+        /* Begin search widget code */
+
+        // create all the nodes
+        var containerNode = document.createElement("div");
+        containerNode.className = "vintage-search";
+        searchNode.appendChild(containerNode);
+
+        var formNode = document.createElement("form");
+        formNode.className = "vintage-search__form";
+        containerNode.appendChild(formNode);
+
+        var inputNode = document.createElement("input");
+        inputNode.className = "vintage-search__input";
+        inputNode.placeholder = "Where be treasure?";
+        inputNode.type = "search";
+        formNode.appendChild(inputNode);
+
+        var listNode = document.createElement("ul");
+        listNode.className = "vintage-search__suggestions";
+        containerNode.appendChild(listNode);
+
+        // Create popup template for VM
+        searchViewModel.popupTemplate = {
+          title: "Search Result",
+          content: "{Match_addr}"
+        };
+
+        var suggestTimer;
+
+        function onSubmit(event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          clearSuggestions();
+          searchViewModel.search(inputNode.value);
+        }
+
+        function searchKey() {
+          clearSuggestions();
+          if (inputNode.value) {
+            suggestTimer = setTimeout(function () {
+              searchViewModel.suggest(inputNode.value);
+            }, 300);
+          }
+        }
+
+        function clearSuggestions() {
+          searchViewModel.cancelSuggest();
+          if (suggestTimer) {
+            clearTimeout(suggestTimer);
+          }
+          listNode.classList.remove("vintage-search__suggestions--visible");
+          listNode.innerHTML = "";
+        }
+
+        function showSuggestions(event) {
+          var results = event.results[0].results;
+          listNode.innerHTML = "";
+          results.forEach(function (result) {
+            var listItemNode = document.createElement("li");
+            listItemNode.className = "vintage-search__suggestion";
+            listItemNode.innerHTML = result.text;
+            listItemNode.onclick = function () {
+              searchViewModel.search(result);
+            };
+            listNode.appendChild(listItemNode);
+          });
+          if (results.length) {
+            listNode.classList.add("vintage-search__suggestions--visible");
+          }
+        }
+
+        formNode.onsubmit = onSubmit;
+
+        inputNode.onkeydown = searchKey;
+        inputNode.onsearch = searchKey;
+
+        searchViewModel.on("search-start", clearSuggestions);
+        searchViewModel.on("suggest-start", clearSuggestions);
+        searchViewModel.on("suggest-complete", showSuggestions);
+
+        /* End search widget code */
+
+      });
+  </script>
+
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>

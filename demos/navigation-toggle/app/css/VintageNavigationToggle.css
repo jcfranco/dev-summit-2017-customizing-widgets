@@ -1,0 +1,30 @@
+.esri-ui .esri-vintage-navigation-toggle {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.esri-vintage-navigation-toggle__ship-wheel {
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  fill: #865826;
+  transition: all 0.15s;
+  height: 48px;
+  width: 48px;
+}
+
+.esri-vintage-navigation-toggle:hover .esri-vintage-navigation-toggle__ship-wheel {
+  transform: scale(1.2) rotate(90deg);
+}
+
+.esri-vintage-navigation-toggle .esri-icon-pan,
+.esri-vintage-navigation-toggle .esri-icon-rotate {
+  background-color: #865826;
+  border-radius: 50%;
+  padding: 3px;
+  color: #e9ded4;
+}
+
+.esri-vintage-navigation-toggle:hover .esri-navigation-toggle__button {
+  font-size: 16px;
+}

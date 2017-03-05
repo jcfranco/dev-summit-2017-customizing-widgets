@@ -1,0 +1,32 @@
+# Outline
+
+- Agenda (Matt)
+- What is customizing? (Matt)
+- Prerequisites (JC)
+  - Accessor
+  - Widget understanding
+- ViewModels (JC)
+  - Why
+    - Allow framework/library independence
+  - Using ViewModels
+  - Extending ViewModels
+  - App extending viewModel?
+- Views (Matt)
+  - Why
+  - Custom Views
+  - Recreate a view in different layout (compass widget?)
+  - Create a custom view not using our framework (Search Widget?)
+- Theming (Alan)
+  - Why
+  - What
+    - BEM
+  - How
+    - SASS
+      - Variables
+      - Mixins
+      - etc
+  - Modify existing theme
+  - Create custom theme using SASS
+- Tips & Tricks (JC)
+  - compact CSS build
+  - Automation (autoprefixer)
