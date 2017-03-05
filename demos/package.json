@@ -1,14 +1,10 @@
 {
-  "name": "vintage-compass",
+  "name": "dev-summit-2017-customizing-widgets",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Demos for the 'Customizing the ArcGIS API for JavaScript Widgets' session (Esri DevSummit 2017)",
   "scripts": {
     "postinstall": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/arcgis-js-api": "^4.2.0"
   },
