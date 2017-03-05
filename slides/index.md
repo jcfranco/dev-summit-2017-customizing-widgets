@@ -28,7 +28,7 @@
 
  What do we mean by customizing?
 
-- Extending a widget view or viewModel
+- Extending an existing widgets view or viewModel
 - Recreating a view with or without our widget framework
 - Creating a theme for widgets
 - Theming a widget
@@ -40,7 +40,7 @@
 # Session Prerequisites
 
 - Accessor
-- Basic knowledge of esri/Widget
+- Basic knowledge of esri Widgets
   - (Plug) Session tomorrow on building widgets using our framework (esri/Widget)
 
 <img src="images/prereqs.gif" width="350">
@@ -199,6 +199,7 @@ You'll notice our widgets have ViewModels.
 - Core logic of widget resides here
 - Provides necessary APIs for the view to do it's thing
 - No DOM/UI concerns (think business logic)
+- Accessor classes
 
 <img src="images/brain.gif" width="250">
 
@@ -256,6 +257,7 @@ class Foo extends declared(Bar, Mixin) {
 
 (The face)
 
+- `esri/widgets/Widget`
 - Uses ViewModel APIs to render the UI
 - View-specific logic resides here
 
