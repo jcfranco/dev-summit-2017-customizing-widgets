@@ -6,6 +6,8 @@
 ### Matt Driscoll – [@driskull](https://twitter.com/driskull)
 ### JC Franco – [@arfncode](https://twitter.com/arfncode)
 
+<img src="images/flag.gif" width="350">
+
 ---
 
 # Agenda
@@ -30,6 +32,8 @@
 - Recreating a view with or without our widget framework
 - Creating a theme for widgets
 - Theming a widget
+
+<img src="images/catpirate.gif" width="350">
 
 ---
 
