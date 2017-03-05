@@ -112,6 +112,8 @@ var map = new Map({
 - `render`
 - `destroy`
 
+<img src="images/catpirate2.gif" width="350">
+
 ---
 
 # `render()`
@@ -278,6 +280,8 @@ We're going to customize a widget view using:
 ---
 
 # Demo: Compass Widget
+
+<img src="images/compass.gif" width="350">
 
 - [Compass API Ref](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 - [TSX View](https://github.com/Esri/arcgis-js-api/blob/4master/widgets/Compass.tsx)
