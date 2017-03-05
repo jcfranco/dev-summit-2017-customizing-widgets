@@ -20,11 +20,6 @@ class VoiceInput extends declared(Accessor) {
   //--------------------------------------------------------------------------
 
   initialize() {
-    Object.keys(this.commands).forEach(command => {
-      const fn = this.commands[command];
-      this.commands[command] = fn.bind(this);
-    });
-
     annyang.addCommands(this.commands);
 
     if (!annyang.isListening()) {
