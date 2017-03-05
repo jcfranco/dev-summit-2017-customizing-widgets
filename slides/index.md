@@ -50,8 +50,7 @@
 ## `esri/core/Accessor`
 
 - API foundation
-- Why?
- - Getters + Setters
+ - Properties (getters + setters)
  - Watching for changes
  - Unified object constructor
  - Computed properties, autocasting and more
@@ -60,16 +59,12 @@
 
 ## Accessor - Watch for changes
 
-```javascript
+```js
 // watch for changes using a property chain
-view.watch("map.basemap.title", function(newValue, oldValue, property, target) {
-  console.log(newValue, oldValue, property, target);
-});
+view.watch("map.basemap.title", handleTitleChange);
 
 // watch for changes to multiple properties
-view.watch('stationary, interacting', function(value) {
-  console.log(value);
-});
+view.watch("stationary, interacting", handleViewPropChange);
 ```
 
 ---
@@ -88,9 +83,12 @@ var map = new Map({
 
 ---
 
-## Want more Accessor details?
+## Want more Accessor deets?
 
 [Building Classes Using Accessor and the ArcGIS API for JavaScript](https://devsummitps17.schedule.esri.com/session-catalog/234004588)
+
+<img src="images/rene.jpg" width="250">
+<img src="images/yann.jpg" width="250">
 
 ---
 
@@ -98,7 +96,7 @@ var map = new Map({
 
 `esri/widgets/Widget`: Our new widget framework
 
-- Custom widget base
+- Accessor-based
 - Built with TypeScript
 
 <img src="images/new-widgets.gif" width="350">
@@ -112,13 +110,13 @@ var map = new Map({
 - `render`
 - `destroy`
 
-<img src="images/catpirate2.gif" width="350">
+<img src="images/lifecycle.gif" width="350">
 
 ---
 
 # `render()`
 
-- Unified entry point for all UI logic
+- Entry point for UI updates
 - Driven by widget's state
 - JSX used to render our UI
 
@@ -132,13 +130,20 @@ render() {
 
 # Esri Widget Prerequisites
 
-Prerequisites for `esri/widgets/Widget`
-
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 - [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 - [ArcGIS typings](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 - [Dojo typings](https://github.com/dojo/typings/wiki/How-To-Use)
+
+---
+
+# Node
+
+- Run JS on the desktop
+- Synchronous
+- npm bundled with Node install
+- [lots of packages available](https://www.npmjs.com/)
 
 <img src="images/node.png" width="200" style="border:0; background:none; box-shadow:none; margin-right:20px;">
 <img src="images/npm.png" width="200" style="border:0; background:none; box-shadow:none;">
@@ -150,18 +155,28 @@ Prerequisites for `esri/widgets/Widget`
 - Superset of JavaScript
 - Compiled to JavaScript
 - Statically type-checked
+- Syntactic sugar... sweet!
+  - Use ES6 syntax while targeting ES5 environments
+
+<img src="images/typescript.png" width="250">
 
 ---
 
 # TS = type safety
 
 ```ts
-view: MapView | SceneView;
+let view: MapView | SceneView;
 
 // ...
 
-view = "not-a-view"; //TS2322: Type '"not-a-view"' is not assignable to type 'MapView | SceneView'.
+/*
+ * TS2322: Type '"not-a-view"' is not assignable
+ * to type 'MapView | SceneView'.
+ */
+view = "not-a-view";
 ```
+
+<img src="images/blocked.gif" width="350">
 
 ---
 
@@ -170,9 +185,15 @@ view = "not-a-view"; //TS2322: Type '"not-a-view"' is not assignable to type 'Ma
 Help describe what things are:
 
 ```ts
+type PresenterNames = "Alan" | "Matt" | "JC";
+
 interface Person {
   name: string;
   age: number;
+}
+
+interface Presenter extends Person {
+  name: PresenterNames;
 }
 ```
 
