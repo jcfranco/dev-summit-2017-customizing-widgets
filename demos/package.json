@@ -2,6 +2,7 @@
   "name": "dev-summit-2017-customizing-widgets",
   "version": "1.0.0",
   "description": "Demos for the 'Customizing the ArcGIS API for JavaScript Widgets' session (Esri DevSummit 2017)",
+  "private": true,
   "scripts": {
     "postinstall": "tsc"
   },
