@@ -140,4 +140,4 @@ searchViewModel.on("suggest-complete", showSuggestions);
 
 ### Add styles to stylesheet
 
-[Complete styles](https://github.com/ArcGIS/presentations-devsummit-2017/blob/master/customizing-widgets/demos/search-complete/app/css/VintageSearch.css)
+[Complete styles](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/demos/search-complete/app/css/VintageSearch.css)

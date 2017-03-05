@@ -284,7 +284,7 @@ We're going to customize a widget view using:
 
 Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
-[Demo steps: Compass view](https://github.com/ArcGIS/presentations-devsummit-2017/blob/master/customizing-widgets/demo-steps/compass.md)
+[Demo steps: Compass view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/customizing-widgets/demo-steps/compass.md)
 
 ---
 
@@ -299,7 +299,7 @@ Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
 Create a custom view **not** using our widget framework (Search Widget).
 
-[Demo steps: Search view](https://github.com/ArcGIS/presentations-devsummit-2017/blob/master/customizing-widgets/demo-steps/search.md)
+[Demo steps: Search view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/customizing-widgets/demo-steps/search.md)
 
 ---
 
@@ -336,9 +336,9 @@ Create a custom view **not** using our widget framework (Search Widget).
 
 # Use the source luke
 
-[GitHub Code](https://github.com/ArcGIS/presentations-devsummit-2017)
+[GitHub Code](https://github.com/jcfranco/dev-summit-2017-customizing-widgets)
 
-github.com/ArcGIS/presentations-devsummit-2017
+github.com/jcfranco/dev-summit-2017-customizing-widgets
 
 todo: shorten url once URL is finalized. (moved to esri account)
 
