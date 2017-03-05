@@ -38,28 +38,24 @@
   <script>
     require([
       "esri/core/Accessor",
-      "esri/WebScene",
+      "esri/Map",
       "esri/views/SceneView",
       "esri/widgets/Search",
       "demo/VoiceSearchViewModel",
       "dojo/domReady!"
     ], function(
       Accessor,
-      WebScene, SceneView,
+      Map, SceneView,
       Search, VoiceSearchViewModel
     ) {
 
-      var scene = new WebScene({
-        portalItem: {
-          id: "c5ee5eb2730e4f86af82d548c820db07"
-        }
+      var scene = new Map({
+        basemap: "dark-gray"
       });
 
       var view = new SceneView({
         container: "viewDiv",
-        map: scene,
-        zoom: 14,
-        center: [-116.51327133175782, 33.82029520464912]
+        map: scene
       });
 
       var search = new Search({
