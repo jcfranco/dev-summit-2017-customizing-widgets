@@ -10,11 +10,21 @@ import SearchViewModel = require("esri/widgets/Search/SearchViewModel");
 import VoiceInput = require("./VoiceInput");
 
 interface VoiceSearchViewModel extends SearchViewModel, VoiceInput {
-  // interface for multi-inheritance
+  // multi-inheritance
 };
 
 @subclass("esri.demos.VoiceSearchViewModel")
 class VoiceSearchViewModel extends declared(SearchViewModel, VoiceInput) {
+
+  //--------------------------------------------------------------------------
+  //
+  //  Properties
+  //
+  //--------------------------------------------------------------------------
+
+  //----------------------------------
+  //  commands
+  //----------------------------------
 
   commands = {
     "search for *searchTerm": (searchTerm: string): void => {

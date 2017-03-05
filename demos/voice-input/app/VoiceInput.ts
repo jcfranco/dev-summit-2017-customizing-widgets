@@ -1,3 +1,6 @@
+/// <amd-dependency path="esri/core/tsSupport/declareExtendsHelper" name="__extends" />
+/// <amd-dependency path="esri/core/tsSupport/decorateHelper" name="__decorate" />
+
 import {
   declared,
   property,
@@ -15,20 +18,6 @@ class VoiceInput extends declared(Accessor) {
 
   //--------------------------------------------------------------------------
   //
-  //  Lifecycle
-  //
-  //--------------------------------------------------------------------------
-
-  initialize() {
-    annyang.addCommands(this.commands);
-
-    if (!annyang.isListening()) {
-      annyang.start();
-    }
-  }
-
-  //--------------------------------------------------------------------------
-  //
   //  Properties
   //
   //--------------------------------------------------------------------------
@@ -38,7 +27,18 @@ class VoiceInput extends declared(Accessor) {
   //----------------------------------
 
   @property()
-  commands: VoiceCommands;
+  get commands(): VoiceCommands {
+    return this._get("commands");
+  }
+  set commands(value: VoiceCommands) {
+    this._set("commands", value);
+
+    annyang.addCommands(value);
+
+    if (!annyang.isListening()) {
+      annyang.start();
+    }
+  }
 
 }
 
