@@ -449,7 +449,11 @@ $background_inverse_color
 ## Additional Resources
 
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
-- [Documentation - 4.0 beta](https://developers.arcgis.com/javascript/beta/)
+- [Styling](https://developers.arcgis.com/javascript/latest/guide/styling/index.html)
+- [Implementing Accessor](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html)
+- [Setting up TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
+- [Widget Development](https://developers.arcgis.com/javascript/latest/guide/custom-widget/index.html)
+- [Documentation - 4.3](https://developers.arcgis.com/javascript/)
 
 ---
 
