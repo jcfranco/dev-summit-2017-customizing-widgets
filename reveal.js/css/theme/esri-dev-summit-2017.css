@@ -285,7 +285,6 @@ body {
   border: none; }
 
 .reveal a:after {
-  color: #000;
   content: "\f08e";
   display: inline-block;
   font-family: 'FontAwesome';

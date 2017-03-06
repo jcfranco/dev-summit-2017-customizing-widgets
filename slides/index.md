@@ -466,16 +466,16 @@ But wait...there&rsquo;s more!
 
 Override the four main **color** variables...
 ```
-$text_color         : #969696;
-$background_color   : #242424;
-$anchor_color       : #69dcff;
-$button_text_color  : #69dcff;
+$text_color            : #d1d1d1;
+$background_color      : #242424;
+$anchor_color          : #9e9e8e;
+$button_text_color     : #adadad;
 ```
 _...then magic!_
 
 <img src="images/magic.gif"/>
 
-[Theming Guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html)
+<a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html" target="_blank">Theming Guide</a>
 
 ---
 # Theming Demo
