@@ -53,7 +53,31 @@
  - Properties (getters + setters)
  - Watching for changes
  - Unified object constructor
- - Computed properties, autocasting and more
+ - Computed properties, autocasting
+
+---
+
+## Accessor - Properties
+
+```js
+// read-only
+@property({
+  readOnly: true
+})
+foo = new Foo();
+
+// aliased
+@property({
+  aliasOf: "bar"
+})
+foo;
+
+// autocast
+@property({
+  type: SomeClass
+})
+foo;
+```
 
 ---
 
@@ -199,11 +223,14 @@ interface Presenter extends Person {
 
 ---
 
-# TypeScript setup
+# Decorators!
 
-- [Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
-- [ArcGIS JS Typings](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html#install-the-arcgis-api-for-javascript-typings)
-- [Dojo Typings](https://github.com/dojo/typings/wiki/How-To-Use)
+- ECMAScript proposal
+- Enhance classes, properties, methods, parameters
+- A few key decorators
+  - `@subclass`
+  - `@property`
+  - `@property`
 
 ---
 
