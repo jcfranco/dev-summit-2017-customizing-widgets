@@ -374,7 +374,7 @@ Create a custom view **not** using our widget framework (Search Widget).
 
 ---
 
-# Why?
+# Why Theme?
 - Branding
 - Match the map
 - Contrast with the map
@@ -383,22 +383,28 @@ Create a custom view **not** using our widget framework (Search Widget).
 
 ---
 
-<img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+
+A powerful scripting language for producing CSS.
+
+---
+
+<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
 ### Why Sass?
 - Modular and DRY
-- Organized Code
+- Organized code
 - Makes **theming** easy
 
 ---
 
-<img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
 ### Compiling
 <img src="images/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
 <img src="images/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
 <img src="images/ruby.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
 
 ---
-# Let's Create a Theme!
+# Let&rsquo;s Create a Theme!
 
 ### Your Theme
 1. Create your theme directory.
@@ -414,8 +420,12 @@ Create a custom view **not** using our widget framework (Search Widget).
 ```
 
 ---
+Before writing a bunch of CSS selectors, let&rsquo;s look at the
+# Theming Approach.
 
-# Theming Basics
+---
+
+# Theming Approach
 
 Three main areas:
 - Color
@@ -423,22 +433,20 @@ Three main areas:
 - Typography
 
 ---
-# Theming Basics
+# Theming Approach
 
 Three main files:
 - `base/_colorVariables.scss`
 - `base/_sizes.scss`
 - `base/_type.scss`
 
-All **default** values are easily overridden.
-
 ---
-# Theming Basics
+# Theming Approach
 
 Default:
 ```
 // Inside base/_colorVariables.scss
-$button_text_color : #6e6e6e !default ;
+$text_color : #6e6e6e !default ;
 ```
 
 <hr>
@@ -446,23 +454,32 @@ $button_text_color : #6e6e6e !default ;
 Your theme:
 ```
 // Inside esri/themes/[your-theme-name]/main.scss
-$button_text_color : #ff0000;
+$text_color : #0079c1;
 ```
+
+Any value assignment overrides the `!default` value.
+
+But wait...there&rsquo;s more!
 
 ---
+# Theming Approach
 
-# Theming Basics
-
-Four main variables
+Override the four main **color** variables...
 ```
-$text_color
-$background_color
-$anchor_color
-$button_text_color
+$text_color         : #969696;
+$background_color   : #242424;
+$anchor_color       : #69dcff;
+$button_text_color  : #69dcff;
 ```
-...then magic!
+_...then magic!_
 
-<img src="images/magic.gif" width="200"/>
+<img src="images/magic.gif"/>
+
+[Theming Guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html)
+
+---
+# Theming Demo
+<img src="images/theming-demo-splash.png" height="420"/>
 
 ---
 

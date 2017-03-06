@@ -167,7 +167,7 @@ body {
   word-wrap: normal; }
 .reveal li code {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 0 0.5em; }
+  padding: 0 0.25em; }
 
 .reveal table {
   margin: auto;
