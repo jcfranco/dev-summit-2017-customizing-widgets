@@ -9,6 +9,7 @@ import {
 
 import Accessor = require("esri/core/Accessor");
 
+// speech recognition provided by: https://github.com/TalAter/annyang
 import annyang = require("annyang");
 
 import VoiceCommands = annyang.VoiceCommands;
