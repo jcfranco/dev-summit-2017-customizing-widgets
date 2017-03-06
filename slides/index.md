@@ -479,6 +479,8 @@ $background_inverse_color
 
 # Questions?
 
+![Questions?](images/questions.gif)
+
 ---
 
 ![Thank you!](images/thanks.gif)
