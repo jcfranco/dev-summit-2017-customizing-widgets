@@ -42,6 +42,7 @@
 - Accessor (`esri/core/Accessor`)
 - Basic knowledge of esri Widgets
   - [Building Your own Widget with ArcGIS API for JavaScript](https://devsummitps17.schedule.esri.com/session-catalog/1469854870) #shamelessplug
+- [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 
 <img src="images/prereqs.gif" width="350">
 
@@ -92,12 +93,19 @@ view.watch("stationary, interacting", handleViewPropChange);
 ## Accessor - Unified Object Constructor
 
 ```js
-var map = new Map({
-  basemap: new Basemap({
-    baseLayers: new Collection([
-      new ArcGISTiledLayer(url)
-    ])
-  })
+var view = new MapView({
+  container: "viewDiv",
+  map: map
+});
+
+var symbol = new SimpleMarkerSymbol({
+  style: "square",
+  color: "blue"
+});
+
+var widget = new BasemapToggle({
+  view: view,
+  nextBasemap: "hybrid"
 });
 ```
 
@@ -148,22 +156,12 @@ render() {
 
 ---
 
-# Esri Widget Prerequisites
-
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
-- [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
-- [ArcGIS typings](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
-- [Dojo typings](https://github.com/dojo/typings/wiki/How-To-Use)
-
----
-
 # Node
 
 - Run JS on the desktop
 - Synchronous
-- npm bundled with Node install
-- [lots of packages available](https://www.npmjs.com/)
+- Package manager bundled with Node install (npm)
+  - [lots of packages available](https://www.npmjs.com/)
 
 <img src="images/node.png" width="200" style="border:0; background:none; box-shadow:none; margin-right:20px;">
 <img src="images/npm.png" width="200" style="border:0; background:none; box-shadow:none;">
@@ -221,7 +219,6 @@ interface Presenter extends Person {
 
 # Decorators!
 
-- ECMAScript proposal
 - Enhance classes, properties, methods, parameters
 
 ```ts
