@@ -17,7 +17,6 @@
 - ViewModels
 - Views
 - Theming
-- Tips & Tricks
 - Q & A
 
 <img src="images/agenda.gif" width="250">
