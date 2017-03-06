@@ -41,7 +41,7 @@
 
 - Accessor
 - Basic knowledge of esri Widgets
-  - (Plug) Session tomorrow on building widgets using our framework (esri/Widget)
+  - [Building Your own Widget with ArcGIS API for JavaScript](https://devsummitps17.schedule.esri.com/session-catalog/1469854870) #shamelessplug
 
 <img src="images/prereqs.gif" width="350">
 
