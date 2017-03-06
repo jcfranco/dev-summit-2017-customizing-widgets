@@ -1,6 +1,10 @@
 
 # Customize Compass Widget Steps
 
+# TypeScript setup
+
+- [Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
+
 ### Setup Dojo config
 
 ```
@@ -16,12 +20,6 @@
   };
 </script>
 ```
-
-# TypeScript setup
-
-- [Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
-- [ArcGIS JS Typings](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html#install-the-arcgis-api-for-javascript-typings)
-- [Dojo Typings](https://github.com/dojo/typings/wiki/How-To-Use)
 
 ### Add TSX File
 
@@ -63,7 +61,7 @@ Verify that everything's all good
 
 ### Add styles to stylesheet
 
-[Styles](demos/compass-complete/css/VintageCompass.css)
+[Styles](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demos/compass-complete/app/css/VintageCompass.css)
 
 
 ### Modify TSX file to use new layout and styles

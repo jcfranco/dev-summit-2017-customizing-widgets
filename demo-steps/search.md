@@ -32,6 +32,8 @@ view.ui.add(searchNode, "top-right");
 
 ```
 // create all the nodes
+var suggestTimer;
+
 var containerNode = document.createElement("div");
 containerNode.className = "vintage-search";
 searchNode.appendChild(containerNode);
@@ -140,4 +142,4 @@ searchViewModel.on("suggest-complete", showSuggestions);
 
 ### Add styles to stylesheet
 
-[Complete styles](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/demos/search-complete/app/css/VintageSearch.css)
+[Complete styles](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demos/search-complete/app/css/VintageSearch.css)
