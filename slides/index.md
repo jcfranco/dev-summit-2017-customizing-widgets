@@ -53,35 +53,31 @@
  - Properties (getters + setters)
  - Watching for changes
  - Unified object constructor
- - Computed properties, autocasting
+- TypeScript support
 
 ---
 
-## Accessor - Properties
+## Accessor - Defining Properties
 
 ```js
-// read-only
-@property({
-  readOnly: true
-})
-foo = new Foo();
+var Foo = Accessor.createSubclass({
+  properties: {
 
-// aliased
-@property({
-  aliasOf: "bar"
-})
-foo;
+    // read-only
+    foo: { readOnly: true, value: new Foo() },
 
-// autocast
-@property({
-  type: SomeClass
-})
-foo;
+    // aliased
+    bar: { aliasOf: "foo" },
+
+    // autocast
+    baz: { type: SomeClass }
+  }
+});
 ```
 
 ---
 
-## Accessor - Watch for changes
+## Accessor - Property watching
 
 ```js
 // watch for changes using a property chain
@@ -146,7 +142,7 @@ var map = new Map({
 
 ```js
 render() {
-  return <div>Hello world!</div>;
+  return <div>{this.title}</div>;
 }
 ```
 
@@ -227,10 +223,23 @@ interface Presenter extends Person {
 
 - ECMAScript proposal
 - Enhance classes, properties, methods, parameters
-- A few key decorators
-  - `@subclass`
-  - `@property`
-  - `@property`
+
+```ts
+class Foo extends declared(Accessor) {
+
+  // read-only
+  @property({ readOnly: true })
+  foo = new Foo();
+
+  // aliased
+  @property({ aliasOf: "foo" })
+  bar;
+
+  // autocast
+  @property({ type: SomeClass })
+  baz;
+}
+```
 
 ---
 
@@ -247,7 +256,6 @@ You'll notice our widgets have ViewModels.
 - Core logic of widget resides here
 - Provides necessary APIs for the view to do it's thing
 - No DOM/UI concerns (think business logic)
-- Accessor classes
 
 <img src="images/brain.gif" width="250">
 
