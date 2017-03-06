@@ -408,7 +408,7 @@ Three areas of theming
   - `base/_type.scss`
 
 ---
-# Theming Demo
+# Theming Basics
 
 In the core:
 ```
@@ -422,6 +422,8 @@ $button_text_color : #ff0000;
 Overrides the `!default` value.
 
 ---
+# Theming Basics
+
 Four main variables
 ```
 $text_color
@@ -438,6 +440,9 @@ $background_inverse_color
 ...then magic!
 
 <img src="images/magic.gif" width="200"/>
+
+---
+# Theming Demo
 
 ---
 
