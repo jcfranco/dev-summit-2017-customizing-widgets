@@ -338,6 +338,7 @@ We're going to customize a widget view using:
 
 <img src="images/compass.gif" width="350">
 
+- [Compass Basic](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
 - [Compass API Ref](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 - [TSX View](https://github.com/Esri/arcgis-js-api/blob/4master/widgets/Compass.tsx)
 
@@ -353,6 +354,7 @@ Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
 # Demo: Search Widget
 
+- [Search Basic](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
 - [Search API Ref](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html)
 - [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html)
 
