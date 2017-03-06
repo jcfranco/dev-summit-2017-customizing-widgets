@@ -382,6 +382,7 @@ Create a custom view **not** using our widget framework (Search Widget).
 - User-specific (e.g. bigger buttons)
 
 ---
+
 <img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
 ### Why Sass?
 - Modular and DRY
@@ -389,6 +390,7 @@ Create a custom view **not** using our widget framework (Search Widget).
 - Makes **theming** easy
 
 ---
+
 <img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
 ### Compiling
 <img src="images/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
@@ -396,6 +398,7 @@ Create a custom view **not** using our widget framework (Search Widget).
 <img src="images/ruby.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
 
 ---
+
 # How?
 <img src="images/sass-black.png" width="125" style="border:none; background: transparent; box-shadow:none;"/>
 
@@ -408,6 +411,7 @@ Three areas of theming
   - `base/_type.scss`
 
 ---
+
 # Theming Basics
 
 In the core:
@@ -422,6 +426,7 @@ $button_text_color : #ff0000;
 Overrides the `!default` value.
 
 ---
+
 # Theming Basics
 
 Four main variables
@@ -442,6 +447,7 @@ $background_inverse_color
 <img src="images/magic.gif" width="200"/>
 
 ---
+
 # Theming Demo
 
 ---
