@@ -273,20 +273,26 @@ body {
 /*********************************************
  * LINKS
  *********************************************/
-
 .reveal a {
-  color: darkblue;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  transition: color .15s ease;
-}
+  transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #77cfeb;
+  color: #fff;
   text-shadow: none;
-  border: none;
-}
+  border: none; }
+
+.reveal a:after {
+  color: #000;
+  content: "\f08e";
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 0.5em;
+  padding: 0.25em 0 0 0.25em;
+  vertical-align: top;}
 
 .reveal .roll span:after {
   color: #fff;
