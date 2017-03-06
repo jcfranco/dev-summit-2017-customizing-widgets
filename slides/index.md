@@ -301,7 +301,7 @@ class Foo extends declared(Bar, Mixin) {
 }
 ```
 
-[Demo](./demos/voice-input)
+[Demo](../demos/voice-input)
 
 ---
 
