@@ -241,7 +241,7 @@ class Foo extends declared(Accessor) {
 
 # ViewModels & Views
 
-You'll notice our widgets have ViewModels.
+Our widgets are separated into VVM pattern.
 
 ---
 
@@ -317,7 +317,7 @@ class Foo extends declared(Bar, Mixin) {
 
 ---
 
-# ViewModels & Views: Why?
+# Views: Why?
 
 - Separates concerns
 - Framework compatibility
@@ -335,19 +335,19 @@ We're going to customize a widget view using:
 
 # Demo: Compass Widget
 
-<img src="images/compass.gif" width="350">
-
 - [Compass Basic](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
 - [Compass API Ref](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 - [TSX View](https://github.com/Esri/arcgis-js-api/blob/4master/widgets/Compass.tsx)
 
+<img src="images/compass.gif" width="250">
+
 ---
 
-# Demo steps
+# Steps
 
 Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
-[Demo steps: Compass view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/compass.md)
+[Steps: Compass view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/compass.md)
 
 ---
 
@@ -357,13 +357,15 @@ Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 - [Search API Ref](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html)
 - [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html)
 
+<img src="images/search.gif" width="350">
+
 ---
 
-# Demo steps
+# Steps
 
 Create a custom view **not** using our widget framework (Search Widget).
 
-[Demo steps: Search view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/search.md)
+[Steps: Search view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/search.md)
 
 ---
 
@@ -457,11 +459,11 @@ $background_inverse_color
 
 ---
 
-# Use the source luke
+# The source code!
 
-[GitHub Code](https://github.com/jcfranco/dev-summit-2017-customizing-widgets)
+## [esriurl.com/widgets2017](https://github.com/jcfranco/dev-summit-2017-customizing-widgets)
 
-## esriurl.com/widgets2017
+<img src="images/source.gif" width="300">
 
 ---
 
@@ -481,6 +483,8 @@ $background_inverse_color
 ![Questions?](images/questions.gif)
 
 ---
+
+# Thank you!
 
 ![Thank you!](images/thanks.gif)
 
