@@ -398,32 +398,56 @@ Create a custom view **not** using our widget framework (Search Widget).
 <img src="images/ruby.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
 
 ---
+# Let's Create a Theme!
 
-# How?
-<img src="images/sass-black.png" width="125" style="border:none; background: transparent; box-shadow:none;"/>
+### Your Theme
+1. Create your theme directory.
+  -   `esri/themes/[your-theme-name]/`
+1. Create a Sass file in your directory.
+  - `main.scss`
 
-Three areas of theming
-- Color
-  - `base/_colorVariables.scss`
-- Size
-  - `base/_sizes.scss`
-- Type
-  - `base/_type.scss`
+<hr>
+
+### Your App
+```
+  <link rel="stylesheet" href="esri/themes/[your-theme-name]/main.css">
+```
 
 ---
 
 # Theming Basics
 
-In the core:
+Three main areas:
+- Color
+- Size
+- Typography
+
+---
+# Theming Basics
+
+Three main files:
+- `base/_colorVariables.scss`
+- `base/_sizes.scss`
+- `base/_type.scss`
+
+All **default** values are easily overridden.
+
+---
+# Theming Basics
+
+Default:
 ```
+// Inside base/_colorVariables.scss
 $button_text_color : #6e6e6e !default ;
 ```
 
-In your theme:
+<hr>
+
+Your theme:
 ```
+// Inside esri/themes/[your-theme-name]/main.scss
 $button_text_color : #ff0000;
 ```
-Overrides the `!default` value.
 
 ---
 
@@ -435,12 +459,6 @@ $text_color
 $background_color
 $anchor_color
 $button_text_color
-```
-
-Two additional variables
-```
-$text_inverse_color
-$background_inverse_color
 ```
 ...then magic!
 
