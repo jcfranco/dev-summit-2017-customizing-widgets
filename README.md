@@ -1,6 +1,6 @@
 # Customizing the ArcGIS API for JavaScript Widgets
 
-[Preview presentation](slides/)
+[Preview presentation](https://jcfranco.github.io/dev-summit-2017-customizing-widgets/slides/#/)
 
 To be presented at [Esri Developer Summit 2017](http://www.esri.com/events/devsummit).
 

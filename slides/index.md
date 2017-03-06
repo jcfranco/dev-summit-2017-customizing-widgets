@@ -39,7 +39,7 @@
 
 # Session Prerequisites
 
-- Accessor
+- Accessor (`esri/core/Accessor`)
 - Basic knowledge of esri Widgets
   - [Building Your own Widget with ArcGIS API for JavaScript](https://devsummitps17.schedule.esri.com/session-catalog/1469854870) #shamelessplug
 
@@ -47,7 +47,7 @@
 
 ---
 
-## `esri/core/Accessor`
+## Accessor
 
 - API foundation
  - Properties (getters + setters)
