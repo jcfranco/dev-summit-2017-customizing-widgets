@@ -17,6 +17,12 @@
 </script>
 ```
 
+# TypeScript setup
+
+- [Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
+- [ArcGIS JS Typings](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html#install-the-arcgis-api-for-javascript-typings)
+- [Dojo Typings](https://github.com/dojo/typings/wiki/How-To-Use)
+
 ### Add TSX File
 
 - Add tsx file and name `VintageCompass.tsx`
