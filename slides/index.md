@@ -446,13 +446,6 @@ $background_inverse_color
 
 ---
 
-# Tips & Tricks
-
-- compact CSS build
-- Automation (autoprefixer)
-
----
-
 ## Additional Resources
 
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
