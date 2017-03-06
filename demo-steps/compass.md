@@ -159,8 +159,4 @@ return (
 
 Verify that everything's all good
 
-### Show extended widget
-
-[Extended Widget](demos/compass-complete/app/VintageCompass-extended.txt)
-
 

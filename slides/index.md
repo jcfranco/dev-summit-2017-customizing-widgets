@@ -342,7 +342,7 @@ We're going to customize a widget view using:
 
 Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
-[Demo steps: Compass view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/customizing-widgets/demo-steps/compass.md)
+[Demo steps: Compass view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/compass.md)
 
 ---
 
@@ -357,7 +357,7 @@ Create a custom widget using our `esri/widgets/Widget` framework (Compass).
 
 Create a custom view **not** using our widget framework (Search Widget).
 
-[Demo steps: Search view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/customizing-widgets/demo-steps/search.md)
+[Demo steps: Search view](https://github.com/jcfranco/dev-summit-2017-customizing-widgets/blob/master/demo-steps/search.md)
 
 ---
 
