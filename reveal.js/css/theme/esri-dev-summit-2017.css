@@ -198,7 +198,6 @@ body {
 
 .reveal code {
   color: orange;
-  font-style: italic;
   font-family: monospace;
 }
 
@@ -211,7 +210,7 @@ body {
   max-height: 400px;
   word-wrap: normal; }
 .reveal li code {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 0 0.25em; }
 
 .reveal table {
