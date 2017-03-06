@@ -448,10 +448,6 @@ $background_inverse_color
 
 ---
 
-# Theming Demo
-
----
-
 ## Additional Resources
 
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
@@ -467,9 +463,7 @@ $background_inverse_color
 
 [GitHub Code](https://github.com/jcfranco/dev-summit-2017-customizing-widgets)
 
-github.com/jcfranco/dev-summit-2017-customizing-widgets
-
-todo: shorten url once URL is finalized. (moved to esri account)
+## esriurl.com/widgets2017
 
 ---
 
