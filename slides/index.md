@@ -370,19 +370,63 @@ Create a custom view **not** using our widget framework (Search Widget).
 ---
 
 # Theming
-
-- Why
-- What
-  - BEM
-- How
-  - SASS
-    - Variables
-    - Mixins
-    - etc
-- Modify existing theme
-- Create custom theme using SASS
-
 <img src="images/fashion.gif" width="250">
+
+---
+
+# Why?
+- Branding
+- Match the map
+- Contrast with the map
+- Based on the environment
+- User-specific (e.g. bigger buttons)
+
+---
+<img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+### Why Sass?
+- Modular and DRY
+- Organized Code
+- Makes **theming** easy
+
+---
+<img src="images/sass-black.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+### Compiling
+<img src="images/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
+<img src="images/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
+<img src="images/ruby.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
+
+---
+# How?
+<img src="images/sass-black.png" width="125" style="border:none; background: transparent; box-shadow:none;"/>
+
+Three areas of theming
+- Color
+  - `base/_colorVariables.scss`
+- Size
+  - `base/_sizes.scss`
+- Type
+  - `base/_type.scss`
+
+---
+# Theming Demo
+
+---
+Four main variables
+```
+$text_color
+$background_color
+$anchor_color
+$button_text_color
+```
+
+Two additional variables
+```
+$text_inverse_color
+$background_inverse_color
+```
+...then magic!
+
+<img src="images/magic.gif" width="200"/>
 
 ---
 
