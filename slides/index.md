@@ -410,6 +410,17 @@ Three areas of theming
 ---
 # Theming Demo
 
+In the core:
+```
+$button_text_color : #6e6e6e !default ;
+```
+
+In your theme:
+```
+$button_text_color : #ff0000;
+```
+Overrides the `!default` value.
+
 ---
 Four main variables
 ```
