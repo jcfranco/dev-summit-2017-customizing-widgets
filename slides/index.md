@@ -287,21 +287,15 @@ class Foo extends declared(Bar) {
 
 ---
 
-# ViewModels: Extending via Mixins
+# Demo: Voice Search
 
-* Isolated pieces of logic
-* Reusable
-* Mix in to enhance classes
+- [annyang](https://github.com/TalAter/annyang)
+- [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html)
+- Use mixin approach
+  - isolated
+  - reusable
 
-```ts
-interface Foo extends
-
-class Foo extends declared(Bar, Mixin) {
-   // nothing to see here, mixed in! :)
-}
-```
-
-[Demo](../demos/voice-input)
+[Demo](../demos/voice-search)
 
 ---
 
