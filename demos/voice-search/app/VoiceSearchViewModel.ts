@@ -28,7 +28,7 @@ class VoiceSearchViewModel extends declared(SearchViewModel, VoiceInput) {
 
   commands = {
 
-    "search for *searchTerm": (searchTerm: string): void => {
+    "where be *searchTerm": (searchTerm: string): void => {
       this.searchTerm = searchTerm;
       this.search();
     }

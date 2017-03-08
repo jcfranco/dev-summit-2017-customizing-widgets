@@ -27,7 +27,7 @@ define(["require", "exports", "esri/core/tsSupport/declareExtendsHelper", "esri/
             //  commands
             //----------------------------------
             _this.commands = {
-                "search for *searchTerm": function (searchTerm) {
+                "where be *searchTerm": function (searchTerm) {
                     _this.searchTerm = searchTerm;
                     _this.search();
                 }
