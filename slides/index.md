@@ -49,11 +49,30 @@
 
 ## Accessor
 
-- API foundation
- - Properties (getters + setters)
- - Watching for changes
- - Unified object constructor
+- JavaScript API Foundation
+- Consistent developer experience
 - TypeScript support
+
+---
+
+## Accessor - Unified Object Constructor
+
+```js
+var view = new MapView({
+  container: "viewDiv",
+  map: map
+});
+
+var symbol = new SimpleMarkerSymbol({
+  style: "square",
+  color: "blue"
+});
+
+var widget = new BasemapToggle({
+  view: view,
+  nextBasemap: "hybrid"
+});
+```
 
 ---
 
@@ -85,27 +104,6 @@ view.watch("map.basemap.title", handleTitleChange);
 
 // watch for changes to multiple properties
 view.watch("stationary, interacting", handleViewPropChange);
-```
-
----
-
-## Accessor - Unified Object Constructor
-
-```js
-var view = new MapView({
-  container: "viewDiv",
-  map: map
-});
-
-var symbol = new SimpleMarkerSymbol({
-  style: "square",
-  color: "blue"
-});
-
-var widget = new BasemapToggle({
-  view: view,
-  nextBasemap: "hybrid"
-});
 ```
 
 ---
