@@ -6,7 +6,7 @@
 ### Matt Driscoll – [@driskull](https://twitter.com/driskull)
 ### JC Franco – [@arfncode](https://twitter.com/arfncode)
 
-<img src="images/flag.gif" width="350" style="border:0; background:none; box-shadow:none;">
+<img src="images/flag.gif" width="350" class="plain">
 
 ---
 
@@ -162,8 +162,8 @@ render() {
 - Package manager bundled with Node install (npm)
   - [lots of packages available](https://www.npmjs.com/)
 
-<img src="images/node.png" width="200" style="border:0; background:none; box-shadow:none; margin-right:20px;">
-<img src="images/npm.png" width="200" style="border:0; background:none; box-shadow:none;">
+<img src="images/node.png" width="200" class="plain">
+<img src="images/npm.png" width="200" class="plain">
 
 ---
 
@@ -377,13 +377,13 @@ Create a custom view **not** using our widget framework (Search Widget).
 
 ---
 
-<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+<img src="images/sass-white.png" width="300" class="plain"/>
 
 A powerful scripting language for producing CSS.
 
 ---
 
-<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+<img src="images/sass-white.png" width="300" class="plain"/>
 ### Why Sass?
 - Modular and DRY
 - Organized code
@@ -391,11 +391,11 @@ A powerful scripting language for producing CSS.
 
 ---
 
-<img src="images/sass-white.png" width="300" style="border:none; background: transparent; box-shadow:none;"/>
+<img src="images/sass-white.png" width="300" class="plain"/>
 ### Compiling
-<img src="images/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
-<img src="images/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
-<img src="images/ruby.png" height="80" style="margin-left:10px; margin-right: 10px; border:none; background: transparent; box-shadow:none;"/>
+<img src="images/nodejs-new-pantone-black.png" class="plain" height="80" style="margin-left:10px; margin-right: 10px;"/>
+<img src="images/grunt.svg" height="80" class="plain" style="margin-left:10px; margin-right: 10px;"/>
+<img src="images/ruby.png" height="80" class="plain" style="margin-left:10px; margin-right: 10px;"/>
 
 ---
 # Let&rsquo;s Create a Theme!
