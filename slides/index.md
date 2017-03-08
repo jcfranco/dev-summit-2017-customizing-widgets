@@ -511,8 +511,6 @@ _...then magic!_
 3. Scroll down to the "Feedback" section
 4. Complete Answers, add a Comment, and Select "Submit"
 
-<img src="images/submit-feedback.png" width="200">
-
 ---
 
 # Questions?
