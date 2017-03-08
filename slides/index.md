@@ -241,7 +241,7 @@ class Foo extends declared(Accessor) {
 
 # ViewModels & Views
 
-Our widgets are separated into VVM pattern.
+Our widgets are separated into views and viewmodels
 
 ---
 
@@ -409,8 +409,10 @@ A powerful scripting language for producing CSS.
 <hr>
 
 ### Your App
+
 ```
-  <link rel="stylesheet" href="esri/themes/[your-theme-name]/main.css">
+  <link rel="stylesheet"
+        href="esri/themes/[your-theme-name]/main.css">
 ```
 
 ---

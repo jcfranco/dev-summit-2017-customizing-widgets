@@ -1,9 +1,9 @@
 
 # Customize Search Widget Steps
 
-No typescript this time :D
+No typescript this time. We'll just use some vanilla JavaScript
 
-We'll just use some vanilla JavaScript
+AKA no compiling :D
 
 ### Require SearchViewModel
 

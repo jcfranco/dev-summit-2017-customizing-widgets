@@ -24,7 +24,18 @@
 ### Add TSX File
 
 - Add tsx file and name `VintageCompass.tsx`
+  - On [SDK widget page](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+- Change relative paths to `esri/*`
+
+### Compile TS
+
 - compile TSX file.
+
+```
+tsc --watch
+```
+
+If successful, we're ready to start coding!
 
 ### Modify `index.html` to require the VintageCompass
 
